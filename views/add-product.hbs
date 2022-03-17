@@ -1,0 +1,40 @@
+<style>
+    .addproduct{
+    width: 600px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 300px;
+}
+</style>   
+   <div class="main">
+                <div class="addproduct">
+                    <h3>Add Product</h3>
+                    <form action="/products/add-product" method="post" >
+
+                        <div class="form mb-2 mt-2">
+                            <label for="form5Example1">Product Name</label>
+                            <input type="text" id="form5Example1" name="name" class="form-control"/>
+                        </div>
+                        <div class="form mb-2">
+                            <label for="form5Example2">Description</label>
+                            <input type="text" id="form5Example2" name="des" class="form-control"  />
+                        </div>
+                        <div class="form mb-2">
+                            <label for="form5Example2">Price</label>
+                            <input type="text" id="form5Example2" name="price" class="form-control"/>
+                        </div>
+                        <div class="form d-flex justify-content-center mb-4">
+                            <label class="form-label">
+                                click add button to add products in your e-shope
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mb-4" >Add</button>
+                    </form>
+                </div>
+            </div>

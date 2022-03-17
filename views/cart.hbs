@@ -1,0 +1,31 @@
+<center> Cart </center>
+
+          <div class="collection-list mt-4 row gx-0 gy-3">
+
+{{#each cart}}
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+          <div class="collection-img position-relative">
+            <img src="/images/c_formal_gray_shirt.png" class="w-100" />
+            <span
+              class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+          </div>
+          <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fas fa-star"></i></span>
+              <span class="text-primary"><i class="fas fa-star"></i></span>
+              <span class="text-primary"><i class="fas fa-star"></i></span>
+              <span class="text-primary"><i class="fas fa-star"></i></span>
+              <span class="text-primary"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">{{this.name}} </p>
+            <span class="fw-bold">$ {{this.price}} </span>
+            <br>
+            <a href="/view-product/" class="btn btn-primary mt-3">View</a>
+          </div>
+        </div>
+
+{{/each }}
+
+
+</div>
